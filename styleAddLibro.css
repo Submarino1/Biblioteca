@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(255, 251, 230);
+    margin: 0;
+}
+
+header{
+    background-color: rgb(65, 42, 19);
+    height: 50px;
+    width: 100%;
+    
+}
+.login{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.campoTexto{
+    width: 359px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+}
+.botonmenu{
+    color: rgb(255, 255, 255);
+    font-size:large;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 6% 0% 0% 13% ;
+    text-align: center;
+    
+}
+.botonmenu:hover{
+    background-color: gray ;
+}
+.formulario{
+    text-align: center;
+    background-color: rgb(255, 251, 230);
+
+
+}
+.Fpub{
+    padding-right: 10px;
+}
+.Fpub-Ct{
+    display: flex;
+    padding-left: 28%;
+    text-align: center;
+}
+.botones input{
+    margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+ .aggLibro{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+ .stock, .pub{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+} 
+#estadoT, #estadoFP, #estadoCt, #estadoA, #estadoE {
+    color: red;
+}

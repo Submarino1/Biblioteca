@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styleMenu.css">
+   <title>Menu</title>
+</head>
+
+<body>
+
+    <header>
+        <br>
+    </header>
+ <div class="Layout">
+        <div class="barraIzq">
+            <div class="opcionLibros">
+                <img id="agregarLibroBtn" onclick="formularioLibroNuevo()" class="opcion" src="Boton Agregar Libro.png" alt="icono libros" >
+            </div>
+            <div class="opcionUser">
+                <img class="opcion" onclick="opcionesClientes()" src="Administracion de clientes.png" alt="icono user">
+            </div>
+        </div>
+        
+        <!--Contenido del lado derecho-->
+        <div class="contenidoDer">
+            <!--contenido de buscador-->
+            <div class="buscador">
+                    <input type="text" id="barraBusc" placeholder="🔎" onkeydown="manejarEnter(Event)">
+                    <img class="filtro" src="Boton filtros.png">
+            </div>
+            <!--contenido de la tabla-->
+            <div class="tabla">
+              <table>
+                <thead>
+                    <tr class="Encabezado">
+                        <th class="Titulo">Titulo</th>
+                        <th class="Autor">Autor</th>
+                        <th class="fechaPub">Fecha publiacion</th>
+                        <th class="Editorial">Editorial</th>
+                        <th class="Cantidad">Cantidad</th>
+                        <th class="Opciones">Opciones</th>
+                    </tr>
+                    <tbody id="tablaAgg"></tbody>
+              </table>  
+            </div>
+        </div>
+ </div>
+
+<script src="MenuJS.js"></script>
+<script src="AggLibroJS.js"></script>
+<script>
+    function manejarEnter(Event){
+        if(Event.key === "Enter"){
+            buscarLibro();
+        }
+    }
+</script>
+</body>
+</html>

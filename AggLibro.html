@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAddLibro.css">
+    <title>Document</title>
+
+</head>
+<script src="AggLibroJS.js"></script>
+<body >
+    
+
+    <header>
+        <br>
+    </header>
+    <div class="formulario">
+ 
+    <form class="FormularioLibroNuevo">
+            <h2>Titulo</h2>
+            <input name="titulo" class="campoTexto aggLibro" type="text" id="titulo">
+            <p id="estadoT"></p>
+
+                <div class="Fpub-Ct">
+                    <div class="Fpub">
+                        <h2>Fecha de <br> publicacion</h2>
+                        <input name="fechaPub" class="campoTexto pub" type="number" id="fechaPub">
+                        <p id="estadoFP"></p>
+                    </div>  
+                    <div class="Ct">
+                        <h2>Cantidad en <br> stock </h2> 
+                        <input name="cantidad" class="campoTexto stock" type="number" id="cantidad">
+                        <p id="estadoCt"></p>
+
+                    </div>  
+                </div>
+            <h2>Autor</h2>
+            <input name="autor" class="campoTexto aggLibro" type="text" id="autor">
+            <p id="estadoA"></p>
+
+            <h2>Editorial</h2>
+            <input name="editorial" class="campoTexto aggLibro" type="text" id="editorial">
+            <p id="estadoE"></p>
+
+            <br>
+            <div class="botones">
+                <input name="subir" type="button" value="Aceptar" id="subir" onclick="capturarLibro()">
+                <input type="button" value="Cancelar" onclick="cerrarVentana()">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleOpClientes.css">
+    <title>Clientesdisp</title>
+</head>
+<script src="opcionesClienteJS.js"></script>
+<body onload="actualizarDesplegable()">
+    <header>
+        <br>
+    </header>
+    <p id="operacionCliente">Penalización de Cliente</p>
+    <div>
+        <label for="clientela">Selecciona un cliente para penalizar:</label>
+        <br>
+        <select id="desplegable">
+            <option value="Seleccione">Seleccione</option>
+        </select>
+    
+    </div>
+    <p id="estadoCliente"></p>
+    <button id="boton" onclick="asignarPenalizacion()">Penalizar</button>
+
+    <p id="operacionCliente">Alta de penalización</p>
+    <div>
+        <label for="clientela">Selecciona un cliente para quitar penalización:</label>
+        <br>
+        <select id="desplegableAlta">
+            <option value="Seleccione">Seleccione</option>
+        </select>
+        
+    </div>
+    <p id="estadoClienteAlta"></p>
+    <button id="boton" onclick="quitarPenalizacion()">Quitar Penalización</button>
+<br>
+    <button id="boton" onclick="window.close()">Salir</button>
+    <script>
+        actualizarDesplegable();
+        actualizarDesplegableAlta();
+    </script>
+</body>
+</html>

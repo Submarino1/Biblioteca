@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 251, 230);
+    margin: 0;
+}
+
+header{
+    background-color: rgb(65, 42, 19);
+    height: 50px;
+    width: 100%;
+    
+}
+.login{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.campoTexto{
+    width: 359px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+}
+.botonmenu{
+    color: rgb(255, 255, 255);
+    font-size:large;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 6% 0% 0% 13% ;
+    text-align: center;
+    
+}
+.botonmenu:hover{
+    background-color: gray ;
+}
+
+#estado{
+    color: red;
+}

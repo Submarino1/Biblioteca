@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleOpClientes.css">
+    <title>Clientesdisp</title>
+</head>
+<script src="opcionesClienteJS.js"></script>
+<body onload="actualizarDesplegable()">
+    <header>
+        <br>
+    </header>
+    <p id="operacionCliente"></p>
+    <div>
+        <label for="clientela">Selecciona un cliente:</label>
+        <br>
+            <select id="desplegable">
+                
+            </select>
+    </div>
+    <p id="estadoCliente"></p>
+    
+    <button id="boton" onclick="eliminarClienteSeleccionado()" >Aceptar</button>
+    <button id="boton" onclick="window.close()" >Cancelar</button>
+
+    
+    <script>
+        
+    function actualizarDesplegable(){
+        desplegable.innerHTML = ""; // Limpiar el contenido actual
+
+    // Obtener los clientes desde Local Storage
+    const clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+
+
+    // Verificar si hay clientes en Local Storage
+    if (clientes.length === 0) {
+        const opcion = document.createElement("option");
+        opcion.textContent = "No hay clientes disponibles";
+        opcion.disabled = true;
+        opcion.selected = true;
+        desplegable.appendChild(opcion);
+        return;
+    }
+
+    // Llenar el desplegable con los clientes
+    clientes.forEach(cliente => {
+        const opcion = document.createElement("option");
+        opcion.value = cliente.nombre;
+        opcion.textContent = cliente.nombre;
+        desplegable.appendChild(opcion);
+    });
+        }; 
+    </script>
+</body>
+</html>

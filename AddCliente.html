@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAddLibro.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <script src="opcionesClienteJS.js"></script>
+        
+
+    <header>
+        <br>
+    </header>
+    <div class="formulario">
+ 
+    <form class="FormularioClienteNuevo">
+            <h2>Nombre</h2>
+            <input name="nombre" class="campoTexto" type="text" id="nombre">
+            <p id="estadoN"></p>
+
+            <h2>Direccion</h2>
+            <input name="direccion" class="campoTexto" type="text" id="direccion">
+            <p id="estadoD"></p>
+
+            <h2>Telefono</h2>
+            <input name="telefono" class="campoTexto" type="tel" id="telefono">
+            <p id="estadoT"></p>
+
+            <h2>Correo electronico</h2>
+            <input name="email" class="campoTexto" type="email" id="email">
+            <p id="estadoE"></p>
+            <br>
+            <div class="botones">
+                <input name="subir" type="button" value="Aceptar" id="subir" onclick="capturarCliente()">
+                <input type="button" value="Cancelar" onclick="window.close()">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

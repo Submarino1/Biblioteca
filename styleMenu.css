@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(255, 251, 230);
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    background-color: rgb(65, 42, 19);
+    height: 50px;
+}
+.login{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.campoTexto{
+    width: 359px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+}
+.botonmenu{
+    color: rgb(255, 255, 255);
+    font-size:large;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 6% 0% 0% 13% ;
+    text-align: center;
+    
+}
+.botonmenu:hover{
+    background-color: gray ;
+}
+.opcionUser, .opcionLibros{
+    position: sticky;
+}
+.barraIzq{
+    width: 150px;
+    border-right: black 1px solid;
+    height: 1000px;
+    text-align: center;
+    
+}
+.opcion{
+    width: 100px;
+    height: 100px;
+    padding: 20px 25px 0px 25px;
+}
+.opcion:hover{
+    width: 110px;
+    height: 110px;
+
+}
+.Layout{
+    display: flex;
+    flex-direction: row;
+}
+
+.buscador{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    
+}
+#barraBusc{
+    background-color: white;
+    margin: 20px 0px 20px 30px;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.filtro{
+    padding: 20px 0px 0px 20px;
+    width: 35px;
+    height: 35px;
+}
+table{
+    margin: 20px 0px 0px 20px;
+    background-color: rgb(255, 245, 195);
+    min-width: 100%;
+}
+
+th, td{
+    height: 55px;
+border-bottom:1px black solid ;
+text-align: center;
+}
+
